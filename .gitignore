@@ -1,0 +1,24 @@
+# dependencies
+node_modules/
+
+# logs
+*.log
+pnpm-debug.log*
+
+# build artifacts
+dist/
+coverage/
+
+# env
+.env
+.env.*
+
+# OS/editor
+.DS_Store
+.vscode/
+.idea/
+
+# scaffold output
+generated/
+tmp-generated/
+tmp-generated-all/

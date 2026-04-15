@@ -1,0 +1,21 @@
+{
+  "name": "fe-mentoring",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "description": "Frontend mentoring assignment scaffolds",
+  "packageManager": "pnpm@9.15.0",
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=9.0.0"
+  },
+  "scripts": {
+    "scaffold": "node scripts/scaffold.mjs --preset=all",
+    "scaffold:react": "node scripts/scaffold.mjs --preset=react",
+    "scaffold:vanilla": "node scripts/scaffold.mjs --preset=vanilla",
+    "verify:scaffold": "node scripts/verify-scaffold.mjs",
+    "lint": "node --check scripts/scaffold.mjs && node --check scripts/verify-scaffold.mjs",
+    "test": "pnpm run verify:scaffold",
+    "build": "pnpm run verify:scaffold"
+  }
+}
