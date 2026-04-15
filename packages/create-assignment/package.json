@@ -1,0 +1,9 @@
+{
+  "name": "@fe-mentoring/create-assignment",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "create-assignment": "./bin/create-assignment.mjs"
+  }
+}

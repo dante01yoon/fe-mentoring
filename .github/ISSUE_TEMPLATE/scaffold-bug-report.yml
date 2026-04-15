@@ -1,0 +1,31 @@
+name: Scaffold bug report
+description: Report a scaffold generation bug
+title: "[Scaffold Bug] "
+labels:
+  - bug
+  - scaffold
+body:
+  - type: input
+    id: command
+    attributes:
+      label: CLI command
+      placeholder: pnpm create-assignment --name ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: env
+    attributes:
+      label: Environment
+      description: OS / Node.js / pnpm versions

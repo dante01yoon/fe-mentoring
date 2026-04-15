@@ -1,14 +1,12 @@
 {
   "name": "fe-mentoring",
-  "version": "0.1.0",
   "private": true,
+  "version": "0.1.0",
+  "type": "module",
   "description": "Frontend mentoring assignment scaffolds",
   "packageManager": "pnpm@9.15.0",
-  "engines": {
-    "node": ">=20.0.0",
-    "pnpm": ">=9.0.0"
-  },
   "scripts": {
+    "create-assignment": "node scripts/create-assignment.mjs",
     "scaffold": "pnpm run scaffold:react && pnpm run scaffold:vanilla",
     "scaffold:react": "echo 'Scaffold react preset from templates/react-assignment'",
     "scaffold:vanilla": "echo 'Scaffold vanilla preset from templates/vanilla-assignment'",
@@ -16,5 +14,9 @@
     "lint": "echo 'No linter configured yet'",
     "test": "echo 'No tests configured yet'",
     "build": "echo 'No build configured yet'"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=9.0.0"
   }
 }

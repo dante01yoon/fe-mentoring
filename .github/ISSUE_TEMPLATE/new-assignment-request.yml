@@ -1,0 +1,31 @@
+name: New assignment request
+description: Propose a new assignment and scaffold preset
+title: "[Assignment Request] "
+labels:
+  - assignment
+  - request
+body:
+  - type: input
+    id: assignment_name
+    attributes:
+      label: Assignment name
+      description: Use kebab-case
+      placeholder: checkout-funnel
+    validations:
+      required: true
+  - type: dropdown
+    id: framework
+    attributes:
+      label: Framework
+      options:
+        - react
+        - vanilla
+    validations:
+      required: true
+  - type: textarea
+    id: requirement
+    attributes:
+      label: Requirement summary
+      description: Describe learning goals and acceptance criteria.
+    validations:
+      required: true

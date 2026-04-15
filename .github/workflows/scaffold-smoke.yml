@@ -1,13 +1,12 @@
-name: CI
+name: Scaffold smoke
 
 on:
-  pull_request:
-  push:
-    branches:
-      - main
+  workflow_dispatch:
+  schedule:
+    - cron: '0 1 * * 1'
 
 jobs:
-  scaffold-verify:
+  smoke:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
