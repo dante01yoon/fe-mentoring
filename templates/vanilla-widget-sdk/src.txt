@@ -1,0 +1,3 @@
+// __ASSIGNMENT_NAME__ entry file
+export const framework = 'vanilla';
+export const preset = 'widget-sdk';

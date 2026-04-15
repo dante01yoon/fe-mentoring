@@ -1,0 +1,9 @@
+{
+  "name": "__ASSIGNMENT_NAME__",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "build": "echo build vanilla widget-sdk",
+    "test": "echo test vanilla widget-sdk"
+  }
+}

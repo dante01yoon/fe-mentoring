@@ -1,0 +1,3 @@
+// __ASSIGNMENT_NAME__ entry file
+export const framework = 'react';
+export const preset = 'funnel';

@@ -1,0 +1,32 @@
+name: New assignment request
+description: Request a new assignment scaffold preset
+title: "[Assignment Request] "
+labels: ["assignment", "request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for proposing a new assignment.
+  - type: input
+    id: assignment_name
+    attributes:
+      label: Assignment name
+      placeholder: e.g. checkout-flow
+    validations:
+      required: true
+  - type: dropdown
+    id: framework
+    attributes:
+      label: Framework
+      options:
+        - React
+        - Vanilla
+    validations:
+      required: true
+  - type: textarea
+    id: goals
+    attributes:
+      label: Learning goals
+      description: What should learners practice?
+    validations:
+      required: true
