@@ -1,0 +1,10 @@
+{
+  "name": "fe-mentoring",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "create-assignment": "node scripts/create-assignment.mjs",
+    "verify:scaffold": "node scripts/verify-scaffold.mjs"
+  }
+}

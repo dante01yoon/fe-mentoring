@@ -1,0 +1,9 @@
+{
+  "name": "__ASSIGNMENT_NAME__",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "node src/main.js",
+    "build": "echo \"build vanilla widget-sdk\""
+  }
+}
