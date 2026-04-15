@@ -1,0 +1,23 @@
+name: Bug Report
+description: 버그를 제보할 때 사용합니다.
+labels: [bug]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: 문제 요약
+      description: 어떤 문제가 발생했는지 간단히 설명해 주세요.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 재현 절차
+      description: 재현 방법을 단계별로 작성해 주세요.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 기대 결과
+      description: 원래 기대한 동작을 작성해 주세요.
