@@ -1,0 +1,11 @@
+{
+  "name": "__APP_TITLE__",
+  "slug": "__APP_SLUG__",
+  "description": "__APP_DESCRIPTION__",
+  "preset": "__PRESET__",
+  "kind": "__APP_KIND__",
+  "author": "__AUTHOR__",
+  "year": "__YEAR__",
+  "framework": "vanilla",
+  "runtime": "vite-ts"
+}

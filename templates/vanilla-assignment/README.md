@@ -1,3 +1,15 @@
-# Vanilla Assignment Template
+# __APP_TITLE__
 
-Vanilla JavaScript 기반 과제용 스캐폴드 템플릿 디렉터리입니다.
+- Slug: `__APP_SLUG__`
+- Description: __APP_DESCRIPTION__
+- Preset: `__PRESET__`
+- Kind: `__APP_KIND__`
+- Author: __AUTHOR__
+- Year: __YEAR__
+
+## Quick Start
+
+```bash
+npm install
+npm run dev
+```

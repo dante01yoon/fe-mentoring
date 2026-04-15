@@ -1,0 +1,11 @@
+{
+  "id": "widget-sdk",
+  "label": "Widget SDK",
+  "description": "__APP_DESCRIPTION__",
+  "appTitle": "__APP_TITLE__",
+  "appSlug": "__APP_SLUG__",
+  "preset": "__PRESET__",
+  "appKind": "__APP_KIND__",
+  "author": "__AUTHOR__",
+  "year": "__YEAR__"
+}
