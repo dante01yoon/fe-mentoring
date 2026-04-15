@@ -30,14 +30,14 @@ function assertNoPlaceholder(dir) {
   }
 }
 
-function assertSmoke(dir) {
+function assertSmoke(dir, { entryFile = 'main.js' } = {}) {
   const pkgPath = path.join(dir, 'package.json');
   const readmePath = path.join(dir, 'README.md');
-  const srcPath = path.join(dir, 'src', 'main.js');
+  const srcPath = path.join(dir, 'src', entryFile);
 
   if (!existsSync(pkgPath)) throw new Error(`Missing package.json in ${dir}`);
   if (!existsSync(readmePath)) throw new Error(`Missing README.md in ${dir}`);
-  if (!existsSync(srcPath)) throw new Error(`Missing src/main.js in ${dir}`);
+  if (!existsSync(srcPath)) throw new Error(`Missing src/${entryFile} in ${dir}`);
 
   const pkg = JSON.parse(readFileSync(pkgPath, 'utf8'));
   if (!pkg.name || pkg.name.startsWith('__')) {
@@ -63,7 +63,7 @@ function main() {
     assertNoPlaceholder(path.join(tempRoot, 'sample-react-funnel'));
     assertNoPlaceholder(path.join(tempRoot, 'sample-vanilla-widget-sdk'));
 
-    assertSmoke(path.join(tempRoot, 'sample-react-funnel'));
+    assertSmoke(path.join(tempRoot, 'sample-react-funnel'), { entryFile: 'main.tsx' });
     assertSmoke(path.join(tempRoot, 'sample-vanilla-widget-sdk'));
 
     console.log('✅ verify:scaffold passed');
