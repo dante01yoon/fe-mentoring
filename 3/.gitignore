@@ -1,0 +1,4 @@
+# tsc -b incremental build outputs
+*.tsbuildinfo
+vite.config.d.ts
+vite.config.js
