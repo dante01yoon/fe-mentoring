@@ -1,0 +1,77 @@
+/*
+ * 컴포넌트 키트 베이스 토큰.
+ * 멘티는 이 토큰을 그대로 쓰거나, 컴포넌트별 CSS 변수로 덮어써서 커스터마이징 경계를 검증할 것.
+ */
+:root {
+  --vck-color-bg: #ffffff;
+  --vck-color-surface: #f6f7f9;
+  --vck-color-border: #d8dce3;
+  --vck-color-text: #1f2330;
+  --vck-color-text-muted: #5a6275;
+  --vck-color-primary: #3457ff;
+  --vck-color-primary-contrast: #ffffff;
+  --vck-color-danger: #d14343;
+
+  --vck-space-1: 4px;
+  --vck-space-2: 8px;
+  --vck-space-3: 12px;
+  --vck-space-4: 16px;
+  --vck-space-6: 24px;
+  --vck-space-8: 32px;
+
+  --vck-radius-sm: 4px;
+  --vck-radius-md: 8px;
+
+  --vck-font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR",
+    Helvetica, Arial, sans-serif;
+
+  --vck-focus-ring: 2px solid #3457ff;
+  --vck-focus-ring-offset: 2px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--vck-color-bg);
+  color: var(--vck-color-text);
+  font-family: var(--vck-font-stack);
+  line-height: 1.5;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+}
+
+:focus-visible {
+  outline: var(--vck-focus-ring);
+  outline-offset: var(--vck-focus-ring-offset);
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+}
+.skip-link:focus {
+  left: var(--vck-space-2);
+  top: var(--vck-space-2);
+  background: var(--vck-color-primary);
+  color: var(--vck-color-primary-contrast);
+  padding: var(--vck-space-2) var(--vck-space-3);
+  border-radius: var(--vck-radius-sm);
+  z-index: 1000;
+}
+
+#app {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: var(--vck-space-6) var(--vck-space-4);
+}
