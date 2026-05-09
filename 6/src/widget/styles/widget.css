@@ -1,0 +1,29 @@
+/*
+ * 위젯 내부 스타일.
+ *
+ * 멘티 가이드:
+ * - host 페이지 스타일에서 새는 영향을 줄이려면 isolation 전략이 필수입니다.
+ * - 이 파일을 어떻게 inject 할지(<style>, <link>, Shadow DOM adoptedStyleSheets 등)는
+ *   isolation 구현에 따라 달라집니다. README 에 명시하세요.
+ * - 스캐폴드는 의도적으로 거의 비어 있습니다. 멘티가 채워주세요.
+ */
+
+.support-widget-root {
+  /* TODO(student): root container 스타일 */
+}
+
+.support-widget-launcher {
+  /* TODO(student): floating button 스타일 */
+}
+
+.support-widget-panel {
+  /* TODO(student): panel 스타일 */
+}
+
+.support-widget-badge {
+  /* TODO(student): unread badge 스타일 */
+}
+
+.support-widget-notification {
+  /* TODO(student): notification toast 스타일 */
+}

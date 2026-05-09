@@ -1,0 +1,65 @@
+/*
+ * Demo Host CSS
+ *
+ * 이 파일은 의도적으로 "시끄러운" host 페이지 스타일을 시뮬레이션합니다.
+ * SDK 멘티 입장에서 적이 되는 스타일들이며, 위젯이 이 환경에서도 깨지지 않도록
+ * isolation 전략(Shadow DOM 또는 iframe)을 통해 위젯 스타일을 host 로부터 보호해야 합니다.
+ *
+ * 주의: 이 파일을 "고치지 마세요". host 페이지 입장에서 강한 글로벌 스타일은 매우 흔합니다.
+ */
+
+* {
+  box-sizing: border-box;
+}
+
+button {
+  all: unset;
+  font-size: 48px;
+  color: red;
+}
+
+div {
+  border: 10px solid hotpink;
+}
+
+.fixed {
+  z-index: 1;
+}
+
+body {
+  margin: 0;
+  padding: 24px;
+  font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+  background: #faf7ff;
+  color: #222;
+}
+
+main#app {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* 가시성을 위해 일반 테스트용 Host 텍스트 스타일은 살짝 둠 */
+h1,
+h2,
+h3 {
+  margin: 16px 0 8px;
+}
+
+p {
+  line-height: 1.6;
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+}
+
+.skip-link:focus {
+  left: 16px;
+  top: 16px;
+  background: #000;
+  color: #fff;
+  padding: 8px 12px;
+  z-index: 9999;
+}

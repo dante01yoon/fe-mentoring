@@ -1,0 +1,12 @@
+/*
+ * 디자인 토큰 placeholder.
+ *
+ * 멘티 가이드:
+ * - boot config.theme.primaryColor 와 같은 옵션을 어떻게 css 로 반영할지 결정하세요.
+ * - css custom property 를 host 글로벌에 노출하면 host 페이지를 오염시킬 수 있습니다.
+ *   isolation root 안쪽에서만 정의되도록 신경쓰세요.
+ */
+
+:root {
+  /* TODO(student): primaryColor / spacing / radius 토큰 정의 */
+}
